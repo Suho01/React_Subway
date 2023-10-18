@@ -17,11 +17,11 @@ function Nav() {
     ];
 
     return (
-        <div className='lg:w-full lg:h-[165px] border-t-[5px] border-[#009223] after:absolute after:top-[170px] after:w-full after:h-[1px] after:bg-[#ddd] after:z-10'>
+        <div className='lg:w-full lg:h-[165px] border-t-[5px] border-[#009223] after:absolute after:top-[170px] after:w-full after:h-[1px] after:bg-[#ddd] after:z-10 group'>
             <div className='lg:w-[1200px] lg:h-full lg:mx-auto lg:flex lg:relative lg:flex-wrap'>
                 <div className='lg:basis-full lg:text-center lg:mt-9'>
                     <NavLink to='/'>
-                        <img src="./../img/logo.png" alt="logo" />
+                        <img className='mx-auto' src="./../img/logo.png" alt="logo" />
                     </NavLink>
                 </div>
                 <div className='lg:absolute lg:right-6 lg:top-10'>
@@ -43,7 +43,7 @@ function Nav() {
                             MainMenu.map((e) => {
                                 return (
                                     <li className='lg:basis-40 lg:text-center lg:font-bold lg:text-lg lg:h-16 cursor-pointer'>
-                                        <NavLink className='lg:inline-block lg:w-full lg:text-[#292929]'>{e}</NavLink>
+                                        <NavLink className='lg:inline-block lg:w-full lg:text-[#292929] hover:lg:text-[#009223]'>{e}</NavLink>
                                     </li>
                                 )
                             })
@@ -51,7 +51,7 @@ function Nav() {
                     </ul>
                 </div>
             </div>
-            <div className='lg:w-full lg:bg-white lg:duration-200 lg:pt-10 lg:-mt-10 lg:relative lg:overflow-hidden lg:hover:h-64
+            <div className='lg:w-full lg:bg-white lg:duration-500 lg:pt-10 lg:-mt-10 lg:relative lg:overflow-hidden lg:h-0 group-hover:h-72
             '>
                 <div className='lg:w-[1200px] lg:mx-auto lg:flex lg:justify-between'>
                     {
@@ -62,7 +62,7 @@ function Nav() {
                                         SubMenu[i].map((e) => {
                                             return (
                                                 <li className='lg:h-9 lg:duration-200'>
-                                                    <NavLink>{e}</NavLink>
+                                                    <NavLink className='hover:lg:text-[#009223] hover:lg:underline'>{e}</NavLink>
                                                 </li>
                                             )
                                         })
