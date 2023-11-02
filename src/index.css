@@ -13,3 +13,22 @@ a {text-decoration: none;
 ul, ol {
     list-style: none;
 }
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    display: none;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 1;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 30px;
+    height: 10px;
+    background-color: #ffc300;
+    border-radius: 12px;
+    position: absolute;
+    right: 365px;
+    bottom: 50px;
+}
