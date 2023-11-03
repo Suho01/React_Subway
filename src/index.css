@@ -32,3 +32,30 @@ ul, ol {
     right: 365px;
     bottom: 50px;
 }
+.menubox::after {
+    content: "";
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    background-image: url("../public/img/btn_more.png");
+    left: 50%;
+    top: 50%;
+    margin: -22px 0 0 -42px;
+    opacity: 0;
+}
+.menubox:hover::after {
+    opacity: 1;
+}
+.contentmenu {
+    background-image: url("../public/img/bg_content.gif");
+}
+.amused {
+    background-image: url("../public/img/bg_utilization.png");
+}
+.history {
+    background-image: url("../public/img/img_subway_history.png");
+}
+.contentbottomtitle {
+    background-image: url("../public/img/bul_tit.png");
+    background-repeat: no-repeat;
+}
