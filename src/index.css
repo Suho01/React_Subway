@@ -59,3 +59,20 @@ ul, ol {
     background-image: url("../public/img/bul_tit.png");
     background-repeat: no-repeat;
 }
+.icon {
+    background: url("../public/img/icon_quickmenu.png") no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.footer-menu ul li:nth-child(2) .icon {
+    background-position-x: -70px;
+}
+.footer-menu ul li:nth-child(3) .icon {
+    background-position-x: -140px;
+}
+.footer-menu ul li:nth-child(4) .icon {
+    background-position-x: -210px;
+}

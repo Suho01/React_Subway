@@ -26,11 +26,25 @@ function ContentsMenu() {
                         </div>
                         <div className='lg:basis-1/2 lg:mt-[76px] lg:ml-[133.5px]'>
                             <ul>
-                                <li><NavLink className='text-[#292929] lg:text-base lg:tracking-[-0.03em] relative'>써브웨이와 함께하는 tvN '이번 생도 잘 부탁해'</NavLink></li>
-                                <li className='lg:mt-[21px]'><NavLink className='text-[#292929] lg:text-base lg:tracking-[-0.03em] relative'>써브웨이와 함께하는 tvN '뿅뿅 지구 오락실2'</NavLink></li>
-                                <li className='lg:mt-[21px]'><NavLink className='text-[#292929] lg:text-base lg:tracking-[-0.03em] relative'>써브웨이와 함께하는 채널A '하트시그널4'</NavLink></li>
+                                <li className='group'><NavLink className='text-[#292929] lg:text-base lg:tracking-[-0.03em] relative group-hover:text-[#009223] after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-[1px] after:transition-all after:bg-[#009223] group-hover:after:w-full'>써브웨이와 함께하는 tvN '이번 생도 잘 부탁해'</NavLink></li>
+                                <li className='lg:mt-[21px] group'><NavLink className='text-[#292929] lg:text-base lg:tracking-[-0.03em] relative group-hover:text-[#009223] after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-[1px] after:transition-all after:bg-[#009223] group-hover:after:w-full'>써브웨이와 함께하는 tvN '뿅뿅 지구 오락실2'</NavLink></li>
+                                <li className='lg:mt-[21px] group'><NavLink className='text-[#292929] lg:text-base lg:tracking-[-0.03em] relative group-hover:text-[#009223] after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-[1px] after:transition-all after:bg-[#009223] group-hover:after:w-full'>써브웨이와 함께하는 채널A '하트시그널4'</NavLink></li>
                             </ul>
                             <NavLink className='inline-block text-[#999] text-sm lg:'>more</NavLink>
+                        </div>
+                    </div>
+                    <div className='lg:basis-[270px] bg-white lg:h-[300px] rounded-tr-[30px] rounded-bl-[30px] relative overflow-hidden'>
+                        <ul className='flex lg:w-[300%]'>
+                            <li><NavLink href="#"><img src="./../../img/heartsignal.jpg" alt="하트시그널4" /></NavLink></li>
+                            <li><NavLink href="#"><img src="img/this.jpg" alt="2" /></NavLink></li>
+                            <li><NavLink href="#"><img src="img/earth.jpg" alt="3" /></NavLink></li>
+                        </ul>
+                        <div className='absolute lg:right-[10px] lg:top-[10px]'>
+                            <ul>
+                                <li className='inline-block text-[0px] w-[10px] h-[10px] bg-white rounded-[30px] mx-[5px] transition-all cursor-pointer'><NavLink href="#">1</NavLink></li>
+                                <li className='inline-block text-[0px] w-[10px] h-[10px] bg-white rounded-[30px] mx-[5px] transition-all cursor-pointer'><NavLink href="#">2</NavLink></li>
+                                <li className='inline-block text-[0px] w-[10px] h-[10px] bg-white rounded-[30px] mx-[5px] transition-all cursor-pointer'><NavLink href="#">3</NavLink></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import './App.css';
 import ContentsMenu from './components/ContentsMenu';
+import Footer from './components/Footer';
 import MenuList from './components/MenuList';
 import Nav from './components/Nav';
 
@@ -9,6 +10,7 @@ function App() {
             <Nav />
             <MenuList />
             <ContentsMenu />
+            <Footer />
         </>
     );
 }
