@@ -58,7 +58,7 @@ function Nav() {
                         </ul>
                     </div>
                 </div>
-                <div className='lg:w-full lg:bg-white lg:duration-500 lg:pt-10 lg:-mt-10 lg:relative lg:overflow-hidden lg:h-0 group-hover:h-72
+                <div className='lg:w-full lg:bg-white lg:duration-500 lg:-mt-0 lg:relative lg:overflow-hidden lg:h-0 group-hover:h-72 z-50
                 '>
                     <div className='lg:w-[1200px] lg:mx-auto lg:flex lg:justify-between'>
                         {
@@ -85,10 +85,10 @@ function Nav() {
             spaceBetween={0}
             slidesPerView={1}
             loop={true}
-            // autoplay={{
-            //     delay: 7000,
-            //     disableOnInteraction: false,
-            // }}
+            autoplay={{
+                delay: 7000,
+                disableOnInteraction: false,
+            }}
             navigation={{clickable: true}}
             pagination={{clickable: true}}
             modules={[Autoplay, Navigation, Pagination]}
@@ -106,10 +106,10 @@ function Nav() {
                     })
                 }                
             </Swiper>
-            <div className='lg:w-[1170px] lg:mt-[-29px] lg:mx-auto z-[9] relative flex justify-end'>
+            <div className='lg:w-[1170px] lg:mt-[-29px] lg:mx-auto z-[9] relative flex justify-end quick-menu'>
                 <ul className='flex basis-[600px]'>
-                    <li className='basis-1/2 h-20 text-center bg-[#ffcd32] rounded-tl-[30px] tracking-[-0.02em]'><NavLink className="text-[22px] pt-[26px] inline-block w-full font-bold before:inline-block before:relative before:w-6 before:h-[30px] before:bg-black before:mr-[13px] before:align-middle before:-top-[2px]">매장찾기</NavLink></li>
-                    <li className='basis-1/2 h-20 text-center bg-[#009223] rounded-br-[30px] tracking-[-0.06em] text-[#292929]'><NavLink className="text-[22px] pt-[26px] inline-block w-full font-bold text-white before:inline-block before:relative before:w-[34px] before:h-[30px] before:bg-white before:align-middle before:mr-[13px] before:-top-[2px]">가맹신청 · 문의</NavLink></li>
+                    <li className='basis-1/2 h-20 text-center bg-[#ffcd32] rounded-tl-[30px] tracking-[-0.02em]'><NavLink className="text-[22px] pt-[26px] inline-block w-full font-bold before:inline-block before:relative before:w-6 before:h-[30px] before:mr-[13px] before:align-middle before:-top-[2px]">매장찾기</NavLink></li>
+                    <li className='basis-1/2 h-20 text-center bg-[#009223] rounded-br-[30px] tracking-[-0.06em] text-[#292929]'><NavLink className="text-[22px] pt-[26px] inline-block w-full font-bold text-white before:inline-block before:relative before:w-[34px] before:h-[30px] before:align-middle before:mr-[13px] before:-top-[2px]">가맹신청 · 문의</NavLink></li>
                 </ul>
             </div>
         </>

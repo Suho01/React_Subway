@@ -76,3 +76,26 @@ ul, ol {
 .footer-menu ul li:nth-child(4) .icon {
     background-position-x: -210px;
 }
+.sns-link ul li:nth-child(1) {
+    background-image: url("./../public/img/icon_sns_instar.png");
+}
+.sns-link ul li:nth-child(1)::after {
+    background-image: url("./../public/img/icon_sns_instar.png");
+    background-position-x: 100%;
+}
+.sns-link ul li:nth-child(2) {
+    left: 65px;
+    background-image: url("./../public/img/icon_sns_facebook.png");
+}
+.sns-link ul li:nth-child(2)::after {
+    background-image: url("./../public/img/icon_sns_facebook.png");
+    background-position-x: 100%;
+}
+.quick-menu ul li:nth-child(1) a::before {
+    content: "";
+    background-image: url("./../public/img/icon_map.png");
+}
+.quick-menu ul li:nth-child(2) a::before {
+    content: "";
+    background-image: url("./../public/img/icon_franchise.png");
+}
