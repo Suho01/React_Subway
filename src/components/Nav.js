@@ -29,7 +29,7 @@ function Nav() {
     return (
         <>
         
-            <div className='lg:w-full lg:h-[165px] border-t-[5px] border-[#009223] after:absolute after:top-[165px] after:w-full after:h-[1px] after:bg-[#ddd] after:z-10 group'>
+            <div className='lg:w-full lg:h-[165px] border-t-[5px] border-[#009223] lg:after:absolute after:top-[165px] after:w-full after:h-[1px] after:bg-[#ddd] after:z-10 group'>
                 <div className='lg:w-[1170px] lg:h-full lg:mx-auto lg:flex lg:relative lg:flex-wrap'>
                     {/* pc nav start */}
                     <div className='lg:basis-full lg:text-center lg:mt-9 lg:block hidden'>
@@ -67,8 +67,8 @@ function Nav() {
 
                     {/* mobile nav start */}
                     <div className='w-full fixed bg-white z-20 border-t-[5px] border-[#009223] top-0 lg:hidden'>
-                        <ul className='basis-full text-center mt-9 lg:hidden flex justify-between px-5 items-center h-20 mb-7'>
-                            <li><NavLink to='/'><img className='' src="./../img/logo.png" alt="logo" /></NavLink></li>
+                        <ul className='basis-full text-center mt-9 lg:hidden flex justify-between px-5 items-center h-8 mb-7'>
+                            <li><NavLink to='/'><img className='w-3/4' src="./../img/logo.png" alt="logo" /></NavLink></li>
                             <li className='cursor-pointer z-[51]' onClick={() => toggleSandwich()}>
                                 {
                                     sandwich ? <FontAwesomeIcon icon={faXmark} className='text-4xl' /> : <img src="./../img/sandwich.png" alt="sandwich" className='w-10' />
@@ -128,7 +128,7 @@ function Nav() {
             navigation={{clickable: true}}
             pagination={{clickable: true}}
             modules={[Autoplay, Navigation, Pagination]}
-            className='-z-10 lg:mt-0 mt-40'
+            className='-z-10 lg:mt-0 mt-24'
             >
                 {
                     Array(3).fill().map((_, i) => {

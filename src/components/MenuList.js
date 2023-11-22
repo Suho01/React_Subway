@@ -9,7 +9,7 @@ function MenuList() {
     return (
         <div className='bg-white w-full lg:h-[560px] pb-[60px]'>
             <div className="lg:w-[1170px] lg:mx-auto pt-[60px] pb-[33px] lg:flex lg:justify-between px-5 text-center">
-                <h3 className='text-[#292929] text-[40px] font-bold lg:pt-1 lg:pl-[25px] mb-[1px] lg:h-[60px] contentbottomtitle tracking-tighter'>Subway's Menu</h3>
+                <span className='text-[#292929] text-[40px] font-bold lg:pt-1 pl-[25px] mb-[1px] lg:h-[60px] contentbottomtitle tracking-tighter'>Subway's Menu</span>
                 <ul className='flex mt-11 lg:justify-normal justify-around'>
                     {
                         SubwayMenu.map((e, i) => {

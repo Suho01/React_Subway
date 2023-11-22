@@ -31,8 +31,8 @@ function ContentsMenu() {
                 </div>
                 <div className='w-full h-full mt-[30px] lg:ml-[55px] px-5 lg:flex'>
                     <div className='lg:flex lg:basis-[870px] relative bg-white h-[300px] lg:mr-[30px] rounded-tl-[30px] rounded-br-[30px] overflow-hidden'>
-                        <div className='lg:mt-[75px] lg:ml-[60px] lg:text-left text-center'>
-                            <h3 className='text-[#292929] text-[30px] font-bold tracking-tighter h-[60px] lg:pt-[17px] pt-4 lg:pl-[25px] mb-[1px] lg:mt-0 mt-10 contentbottomtitle'>What's New</h3>
+                        <div className='lg:mt-[75px] lg:ml-[60px] lg:text-left text-center mt-10'>
+                            <span className='text-[#292929] text-[30px] font-bold tracking-tighter h-[60px] lg:pt-[17px] pt-4 pl-[25px] mb-[1px] lg:mt-0 contentbottomtitle'>What's New</span>
                             <p className='text-center leading-[26px] tracking-[-0.03em] lg:block hidden'>써브웨이의 다양한 소식을</p>
                             <p className='text-center leading-[26px] tracking-[-0.03em] lg:block hidden'>빠르게 전달해드립니다.</p>
                             <p className='text-center leading-[26px] tracking-[-0.03em] lg:hidden block text-[#666] text-sm'>써브웨이의 다양한 소식을 빠르게 전달해드립니다.</p>
