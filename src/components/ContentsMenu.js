@@ -2,6 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 function ContentsMenu() {
+    const title = ["써브웨이와 함께하는 tvN '이번 생도 잘 부탁해'", "써브웨이와 함께하는 tvN '뿅뿅 지구 오락실2'", "써브웨이와 함께하는 채널A '하트시그널4'"];
+
     return (
         <div className='w-full contentmenu'>
             <div className='lg:w-[1200px] mx-auto py-20'>
@@ -27,33 +29,47 @@ function ContentsMenu() {
                         <NavLink className='absolute right-10 bottom-8 py-1 px-3 text-sm text-white border-2 text-center rounded-[20px]'>써브웨이 역사</NavLink>
                     </div>
                 </div>
-                <div className='w-full h-full mt-[30px] lg:ml-[55px] mx-5 lg:flex'>
-                    <div className='lg:flex lg:basis-[870px] bg-white h-[300px] lg:mr-[30px] rounded-tl-[30px] rounded-br-[30px] overflow-hidden'>
-                        <div className='lg:mt-[75px] lg:ml-[60px]'>
-                            <h3 className='text-[#292929] text-[30px] font-bold tracking-tighter h-[60px] lg:pt-[17px] pt-3 lg:pl-[25px] mb-[1px] contentbottomtitle'>What's New</h3>
-                            <p className='text-center leading-[26px] tracking-[-0.03em]'>써브웨이의 다양한 소식을</p>
-                            <p className='text-center leading-[26px] tracking-[-0.03em]'>빠르게 전달해드립니다.</p>
+                <div className='w-full h-full mt-[30px] lg:ml-[55px] px-5 lg:flex'>
+                    <div className='lg:flex lg:basis-[870px] relative bg-white h-[300px] lg:mr-[30px] rounded-tl-[30px] rounded-br-[30px] overflow-hidden'>
+                        <div className='lg:mt-[75px] lg:ml-[60px] lg:text-left text-center'>
+                            <h3 className='text-[#292929] text-[30px] font-bold tracking-tighter h-[60px] lg:pt-[17px] pt-4 lg:pl-[25px] mb-[1px] lg:mt-0 mt-10 contentbottomtitle'>What's New</h3>
+                            <p className='text-center leading-[26px] tracking-[-0.03em] lg:block hidden'>써브웨이의 다양한 소식을</p>
+                            <p className='text-center leading-[26px] tracking-[-0.03em] lg:block hidden'>빠르게 전달해드립니다.</p>
+                            <p className='text-center leading-[26px] tracking-[-0.03em] lg:hidden block text-[#666] text-sm'>써브웨이의 다양한 소식을 빠르게 전달해드립니다.</p>
                         </div>
-                        <div className='lg:basis-1/2 lg:mt-[76px] lg:ml-[133.5px]'>
+                        <div className='lg:basis-1/2 lg:mt-[76px] mt-5 lg:ml-[133.5px] ml-16'>
                             <ul>
-                                <li className='group'><NavLink className='text-[#292929] lg:text-base lg:tracking-[-0.03em] relative group-hover:text-[#009223] after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-[1px] after:transition-all after:bg-[#009223] group-hover:after:w-full'>써브웨이와 함께하는 tvN '이번 생도 잘 부탁해'</NavLink></li>
-                                <li className='lg:mt-[21px] group'><NavLink className='text-[#292929] lg:text-base lg:tracking-[-0.03em] relative group-hover:text-[#009223] after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-[1px] after:transition-all after:bg-[#009223] group-hover:after:w-full'>써브웨이와 함께하는 tvN '뿅뿅 지구 오락실2'</NavLink></li>
-                                <li className='lg:mt-[21px] group'><NavLink className='text-[#292929] lg:text-base lg:tracking-[-0.03em] relative group-hover:text-[#009223] after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-[1px] after:transition-all after:bg-[#009223] group-hover:after:w-full'>써브웨이와 함께하는 채널A '하트시그널4'</NavLink></li>
+                                {
+                                    title.map((e, i) => {
+                                        return (
+                                            <li key={i} className='group lg:mt-[21px] mt-3 first:mt-0'><NavLink className='text-[#292929] lg:text-base lg:tracking-[-0.03em] relative group-hover:text-[#009223] after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-[1px] after:transition-all after:bg-[#009223] group-hover:after:w-full'>{e}</NavLink></li>
+                                        )
+                                    })
+                                }
                             </ul>
-                            <NavLink className='inline-block text-[#999] text-sm lg:'>more</NavLink>
+                            <NavLink className='lg:inline-block text-[#999] text-sm mt-5 hidden'>more</NavLink>
+                            <NavLink className='lg:hidden absolute text-[#999] text-sm right-16 bottom-5'>more</NavLink>
                         </div>
                     </div>
-                    <div className='lg:basis-[270px] bg-white lg:h-[300px] rounded-tr-[30px] rounded-bl-[30px] relative overflow-hidden'>
+                    <div className='lg:basis-[270px] bg-white lg:h-[300px] rounded-tr-[30px] rounded-bl-[30px] relative overflow-hidden lg:block hidden'>
                         <ul className='flex lg:w-[300%]'>
-                            <li><NavLink href="#"><img src="./../../img/heartsignal.jpg" alt="하트시그널4" /></NavLink></li>
-                            <li><NavLink href="#"><img src="img/this.jpg" alt="2" /></NavLink></li>
-                            <li><NavLink href="#"><img src="img/earth.jpg" alt="3" /></NavLink></li>
+                            {
+                                Array(3).fill().map((_, i) => {
+                                    return (
+                                        <li><NavLink href="#"><img src={`./../../img/content${i + 1}.jpg`} alt={i} /></NavLink></li>
+                                    )
+                                })
+                            }
                         </ul>
                         <div className='absolute lg:right-[10px] lg:top-[10px]'>
                             <ul>
-                                <li className='inline-block text-[0px] w-[10px] h-[10px] bg-white rounded-[30px] mx-[5px] transition-all cursor-pointer'><NavLink href="#">1</NavLink></li>
-                                <li className='inline-block text-[0px] w-[10px] h-[10px] bg-white rounded-[30px] mx-[5px] transition-all cursor-pointer'><NavLink href="#">2</NavLink></li>
-                                <li className='inline-block text-[0px] w-[10px] h-[10px] bg-white rounded-[30px] mx-[5px] transition-all cursor-pointer'><NavLink href="#">3</NavLink></li>
+                                {
+                                    Array(3).fill().map((_, i) => {
+                                        return (
+                                            <li key={i} className='inline-block text-[0px] w-[10px] h-[10px] bg-white rounded-[30px] mx-[5px] transition-all cursor-pointer'><NavLink href="#">1</NavLink></li>
+                                        )
+                                    })
+                                }
                             </ul>
                         </div>
                     </div>

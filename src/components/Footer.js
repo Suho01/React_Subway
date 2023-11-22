@@ -25,15 +25,15 @@ function Footer() {
 
     return (        
         <>
-            <div className='text-center lg:pt-10 lg:pb-[37px] footer-menu'>
-                <ul className='lg:h-[70px] overflow-hidden inline-block'>
+            <div className='text-center pt-10 pb-[37px] footer-menu'>
+                <ul className='lg:h-[70px] h-44 lg:overflow-hidden lg:inline-block flex flex-wrap justify-between px-5'>
                     {
                         footerMenu.map((e, i) => {
                             return (
-                                <li key={i} className='float-left h-full relative lg:ml-20 first:lg:left-[1px] first:lg:ml-0'>
-                                    <NavLink href="#" className='block lg:h-[70px] lg:pl-[90px] text-[0px]'>
+                                <li key={i} className='float-left h-full relative lg:ml-20 first:lg:left-[1px] first:lg:ml-0 lg:mb-0 -mb-16'>
+                                    <NavLink href="#" className='block lg:h-[70px] h-40 lg:pl-[90px] pl-20 text-[0px]'>
                                         <div class="icon"></div>
-                                        <p className='text-lg text-[#292929] text-left lg:mt-[11px] lg:tracking-[-0.04em] font-bold'>{e.title}</p>
+                                        <p className='text-lg text-[#292929] text-left lg:mt-1 mt-2 lg:tracking-[-0.04em] font-bold'>{e.title}</p>
                                         <span className='text-[13px] text-[#999] text-left lg:mt-[6px] block font-normal tracking-[-0.02em]'>{e.desc}</span>
                                     </NavLink>
                                 </li>
@@ -42,10 +42,10 @@ function Footer() {
                     }
                 </ul>
             </div>
-            <div className='bg-[#292929] lg:pt-6 lg:pb-[18.81px] relative after:absolute after:w-full after:h-[1px] after:bg-[#3b3b3b] after:top-[59px]'>
-                <div className='lg:w-[1170px] mx-auto relative'>
-                    <div className='lg:mb-[25px]'>
-                        <ul className='flex'>
+            <div className='bg-[#292929] pt-6 pb-[18.81px] relative after:absolute after:w-full after:h-[1px] after:bg-[#3b3b3b] after:top-[59px]'>
+                <div className='lg:w-[1170px] mx-auto relative px-5'>
+                    <div className='mb-[25px]'>
+                        <ul className='flex lg:justify-normal justify-between'>
                             {
                                 footerTop.map((e, i) => {
                                     return (
@@ -55,17 +55,26 @@ function Footer() {
                             }
                         </ul>
                     </div>
-                    <div>
+                    <div className='lg:pt-0 pt-1'>
                         {
                             footerBottom.map((e, i) => {
                                 return (
-                                    <span key={i} className='text-[13px] inline-block lg:mt-[18px] lg:ml-[3px] lg:pl-[9px] relative text-[#666] after:absolute after:w-[2px] after:h-[10px] after:bg-[#666] after:left-[2px] after:top-[5px] first:after:w-0 first:ml-0 first:pl-0'>{e}</span>
+                                    <>
+                                        <span key={i} className='text-[13px] lg:inline-block mt-[18px] lg:ml-[3px] lg:pl-[9px] relative text-[#666] after:absolute after:w-[2px] after:h-[10px] after:bg-[#666] after:left-[2px] after:top-[5px] first:after:w-0 first:ml-0 first:pl-0 hidden'>{e}</span>
+                                        <p key={i} className='text-[13px] mt-2 text-[#666] lg:hidden'>{e}</p>
+                                    </>
                                 )
                             })
                         }
-                        <p className='text-[13px] lg:leading-[31px] lg:tracking-tighter text-[#666]'>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                        <div className='lg:hidden block text-[0px] w-[120px] h-[50px] sns-link mx-auto my-5'>
+                            <ul className='flex justify-between'>
+                                <li className='w-[50px] h-[50px] overflow-hidden lg:bottom-0 cursor-pointer after:transition-all after:w-[50px] after:h-[50px] after:block after:opacity-0 hover:after:opacity-100'>인스타그램</li>
+                                <li className='w-[50px] h-[50px] overflow-hidden lg:bottom-0 cursor-pointer after:transition-all after:w-[50px] after:h-[50px] after:block after:opacity-0 hover:after:opacity-100'>페이스북</li>
+                            </ul>
+                        </div>
+                        <p className='text-[13px] lg:leading-[31px] tracking-tighter text-[#666] text-center lg:text-left'>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
                     </div>
-                    <div className='absolute text-[0px] lg:right-[-10px] lg:top-[52px] lg:w-[165px] lg:h-[50px] sns-link'>
+                    <div className='lg:absolute lg:block hidden text-[0px] lg:right-[-10px] lg:top-[52px] lg:w-[165px] lg:h-[50px] sns-link'>
                         <ul>
                             <li className='absolute lg:w-[50px] lg:h-[50px] overflow-hidden lg:bottom-0 cursor-pointer after:transition-all after:lg:w-[50px] after:lg:h-[50px] after:block after:opacity-0 hover:after:opacity-100'>인스타그램</li>
                             <li className='absolute lg:w-[50px] lg:h-[50px] overflow-hidden lg:bottom-0 cursor-pointer after:transition-all after:lg:w-[50px] after:lg:h-[50px] after:block after:opacity-0 hover:after:opacity-100'>페이스북</li>
