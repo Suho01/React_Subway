@@ -75,7 +75,7 @@ function Nav() {
                                 }
                             </li>
                         </ul>
-                        <div className={`lg:hidden block fixed bg-[#009223] right-0 top-0 h-full z-50 p-20 pt-40 duration-500 ${sandwich ? 'right-[-1px]' : '-right-80'}`}>
+                        <div className={`lg:hidden block fixed bg-[#009223] right-0 top-0 h-full z-50 p-20 pt-40 duration-500 ${sandwich ? 'right-[-1px]' : '-right-[260px]'}`}>
                             <ul className='text-white'>
                                 {
                                     MainMenu.map((e, i) => {
