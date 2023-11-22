@@ -99,3 +99,7 @@ ul, ol {
     content: "";
     background-image: url("./../public/img/icon_franchise.png");
 }
+::selection {
+    background: #0ec538;
+    color: #fff;
+}
